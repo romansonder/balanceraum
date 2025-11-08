@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/balanceraum/static/css/main.f855e6bc.css",
+    "main.js": "/balanceraum/static/js/main.3e58c25b.js",
+    "static/js/453.846fee9a.chunk.js": "/balanceraum/static/js/453.846fee9a.chunk.js",
+    "static/media/logo.svg": "/balanceraum/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/balanceraum/index.html",
+    "main.f855e6bc.css.map": "/balanceraum/static/css/main.f855e6bc.css.map",
+    "main.3e58c25b.js.map": "/balanceraum/static/js/main.3e58c25b.js.map",
+    "453.846fee9a.chunk.js.map": "/balanceraum/static/js/453.846fee9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.3e58c25b.js"
+  ]
+}
