@@ -15,6 +15,87 @@
     font-weight: 300;
 }
 
+.image-slider {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-image-wrapper {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #6d9999;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.slider-arrow-left {
+    left: 10px;
+}
+
+.slider-arrow-right {
+    right: 10px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+}
+
+.slider-dot:hover {
+    background-color: #999;
+}
+
+.slider-dot.active {
+    background-color: #6d9999;
+}
+
 .intro-content {
     max-width: 900px;
     margin: 0 auto;
@@ -80,6 +161,15 @@
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .slider-image-wrapper {
+        height: 300px;
+    }
+
+    .slider-arrow {
+        font-size: 1.5rem;
+        padding: 8px 12px;
     }
 
     .features {

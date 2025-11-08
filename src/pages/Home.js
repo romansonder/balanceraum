@@ -1,12 +1,78 @@
 import './Home.css';
+import { useState, useEffect } from 'react';
 
 function Home() {
+    const images = [
+        `${process.env.PUBLIC_URL}/images/Lena_Praxis-4853-Bearbeitet.jpg`,
+        `${process.env.PUBLIC_URL}/images/Lena_Praxis-4893-Bearbeitet.jpg`,
+        `${process.env.PUBLIC_URL}/images/Logo_Therapiepunkt_Suenikon_CMYK_1.jpg`
+    ];
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 4000); // Change image every 4 seconds
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    const goToSlide = (index) => {
+        setCurrentImageIndex(index);
+    };
+
+    const goToPrevious = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    const goToNext = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
     return (
         <div className="home">
             <section className="hero">
                 <div className="container">
                     <h1>Herzlich Willkommen beim BalanceRaum</h1>
                     <p className="hero-subtitle">Bewusst bewegen, ausgeglichen leben</p>
+                </div>
+            </section>
+
+            <section className="section section-white">
+                <div className="container">
+                    <div className="image-slider">
+                        <div className="slider-container">
+                            <button className="slider-arrow slider-arrow-left" onClick={goToPrevious}>
+                                &#10094;
+                            </button>
+
+                            <div className="slider-image-wrapper">
+                                <img
+                                    src={images[currentImageIndex]}
+                                    alt={`Slide ${currentImageIndex + 1}`}
+                                    className="slider-image"
+                                />
+                            </div>
+
+                            <button className="slider-arrow slider-arrow-right" onClick={goToNext}>
+                                &#10095;
+                            </button>
+                        </div>
+
+                        <div className="slider-dots">
+                            {images.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className={`slider-dot ${index === currentImageIndex ? 'active' : ''}`}
+                                    onClick={() => goToSlide(index)}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </section>
 
