@@ -13,6 +13,9 @@ function About() {
                 <div className="container">
                     <div className="team-member">
                         <h2>Lena Smieszek</h2>
+                        <div className="member-image">
+                            <img src={`${process.env.PUBLIC_URL}/images/Lena_Smieszek.jpg`} alt="Lena Smieszek" />
+                        </div>
                         <div className="member-content">
                             <p>
                                 Mir war schon früh klar, dass ich gerne mit Menschen zusammenarbeite,
@@ -62,6 +65,9 @@ function About() {
                 <div className="container">
                     <div className="team-member">
                         <h2>Katja Gut</h2>
+                        <div className="member-image">
+                            <img src={`${process.env.PUBLIC_URL}/images/Katja_Gut.jpg`} alt="Katja Gut" />
+                        </div>
                         <div className="member-content">
                             <p>
                                 Hallo! Ich bin Katja Gut und ich arbeite seit Januar 2021 in der Praxis.
