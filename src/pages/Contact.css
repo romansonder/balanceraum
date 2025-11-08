@@ -1,0 +1,82 @@
+.contact {
+    min-height: 100vh;
+}
+
+.contact .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #5cc1d2;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #4ab0c0;
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-white {
+    background-color: #ffffff;
+}
+
+.section-gray {
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        padding: 20px 15px;
+    }
+
+    .map-container iframe {
+        height: 300px !important;
+    }
+}

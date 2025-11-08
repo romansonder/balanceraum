@@ -1,0 +1,68 @@
+.page-header {
+    background: linear-gradient(135deg, #6d9999 0%, #5a7f7f 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    margin: 0;
+}
+
+.team-member {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-member h2 {
+    color: #6d9999;
+    margin-bottom: 30px;
+}
+
+.member-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.qualifications {
+    margin-top: 40px;
+}
+
+.qualifications h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.qualifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.qualifications li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.6;
+}
+
+.qualifications li:last-child {
+    border-bottom: none;
+}
+
+.qualifications strong {
+    color: #6d9999;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .qualifications li {
+        font-size: 0.95rem;
+    }
+}

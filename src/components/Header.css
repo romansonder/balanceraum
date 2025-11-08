@@ -1,0 +1,78 @@
+.top-bar {
+    background: linear-gradient(135deg, #6d9999 0%, #5a7f7f 100%);
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: #1a3333;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #0d1f1f;
+    opacity: 0.8;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #333333;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 15px;
+}
+
+.nav a {
+    color: #333333;
+    font-weight: normal;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: #6d9999;
+    border-bottom-color: #6d9999;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
